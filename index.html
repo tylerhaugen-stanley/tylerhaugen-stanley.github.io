@@ -1,0 +1,27 @@
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<body>
+Hello world
+</body>
+
+
+<script type="text/javascript">
+	
+var SCRIPT_URL = "https://script.google.com/a/macros/crestwood.on.ca/s/AKfycbwPnOXBMwJDT_AQ0S7xjPlp_vf4V5qhN3YUl9CpX7il/dev?testName=Spelling101&className=ENG101&sectionName=L0101";
+
+$(document).ready(function() {
+
+	$.ajax({
+		url: SCRIPT_URL,
+		type:"GET"
+	}).done(function(data){
+		debugger;
+		alert(data);
+	})
+});
+</script>
